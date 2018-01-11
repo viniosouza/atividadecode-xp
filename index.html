@@ -4,48 +4,94 @@
     <meta charset="utf-8" />
     <title>Alta Fidelidade</title>
     <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
-    <script src="./main.js"></script>
+    <script src="./js/carrinho.js"></script>
 </head>
-<body>
+<body onload="listarProdutos">
     <div class="shopping-all">
     <div class="shopping-cart">
         <p>You have <b>3 items</b> in your order</p>
-        <table >
+        <table class="table-row" >
             <tr>
               <th>NAME</th>
               <th>PRICE</th>
               <th>QUANTITY</th>
               <th>TOTAL</th>
             </tr>
-            <tr>
-                <td>
-                   <p>Puma Golf Ragian Tech polo tee</p>
-                    <br>
-                    color:
-                    <input type="color" />
-                    Size:<select>
-                      <option value="S"></option>
-                      <option value="M"></option>
-                      <option value="L"></option>
-                      <option value="XL"></option>
-                      <option value="XXL"></option>
-                    </select>
-                </td>
-                <td>
-                    $72
-                </td>
-                <td>
-                  <input type="number">
-                </td>
-                <td>
-                    $216
-                </td>
+
+            <!-- Car 1 -->
+            <tr id="produtos">
+               
             </tr>
+            <!-- Car 2 -->
+            <!-- <tr>
+                    <td>
+                        <div class="table-details">
+                        <button class="button-x">X</button>
+                        <img  class="shopping-img"src="./img/purpleT-shirt.jpeg" alt="t-shirt">
+                       <div class="detalhe-box">
+                            <p class="shopping-table-details"><b>PumaGolf Ragian Tech polo tee</b></p>
+                            <br>
+                            color:
+                            <input type="color"/>
+                            Size:<select>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                            </select>
+                        </div>
+                    </div>
+                    </td>
+                    <td>
+                       <p>$<b>72</b></p>
+                    </td>
+                    <td>
+                        <button>+</button>
+                      <input type="number" value="quantity">
+                      <button>-</button>
+                    </td>
+                    <td><p>$<b>216</b></p></td>
+                </tr> -->
+                <!-- Car 3 -->
+                <!-- <tr>
+                        <td>
+                            <div class="table-details">
+                            <button class="button-x">X</button>
+                            <img  class="shopping-img"src="./img/purpleT-shirt.jpeg" alt="t-shirt">
+                           <div class="detalhe-box">
+                                <p class="shopping-table-details"><b>PumaGolf Ragian Tech polo tee</b></p>
+                                <br>
+                                color:
+                                <input type="color"/>
+                                Size:<select>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>
+                                </select>
+                            </div>
+                        </div>
+                        </td>
+                        <td>
+                           <p>$<b>72</b></p>
+                        </td>
+                        <td>
+                            <button>+</button>
+                          <input type="number" value="quantity">
+                          <button>-</button>
+                        </td>
+                        <td><p>$<b>216</b></p></td>
+                    </tr> -->
         </table>
-        <button>Continue shopping</button>
-        <span>Subtotal $ <b>523</b></span>
-        <button>Shopping Info</button>
-      </div>
+        <span class="shopping-total">Subtotal $ <b>523</b></span>
+        <br>
+        <div class="shopping-button">
+        <button class="continue-shopping-button">Continue shopping</button>
+        <button class="info-shopping-button">Shopping Info</button>
+        </div>  
+    </div>
     </div>
 </body>
 </html>
