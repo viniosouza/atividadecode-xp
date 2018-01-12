@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
     <script src="./js/carrinho.js"></script>
 </head>
-<body onload="listarProdutos">
+<body onload="listarProdutos()">
     <div class="shopping-all">
     <div class="shopping-cart">
         <p>You have <b>3 items</b> in your order</p>
@@ -19,9 +19,9 @@
             </tr>
 
             <!-- Car 1 -->
-            <tr id="produtos">
+            <tbody  id="produtos">
                
-            </tr>
+            </tbody>
             <!-- Car 2 -->
             <!-- <tr>
                     <td>
@@ -85,7 +85,7 @@
                         <td><p>$<b>216</b></p></td>
                     </tr> -->
         </table>
-        <span class="shopping-total">Subtotal $ <b>523</b></span>
+        <span id="total" class="shopping-total"></span>
         <br>
         <div class="shopping-button">
         <button class="continue-shopping-button">Continue shopping</button>
@@ -93,5 +93,63 @@
         </div>  
     </div>
     </div>
+    <br>
+    <!-- Form part2 -->
+    <div class="shopping-cart">
+        <div class="shopping-title">
+        <span>Shopping <b>address</b></span>
+        <span><b>Contact</b> info</span>
+        <br>
+        </div>
+        <div class="shopping-adress">
+        <!-- Left -->
+        <select>
+            <option value="">Country</option>
+        </select>
+        <br>
+        <select>
+            <option value="">City</option>
+        </select>
+        <br>
+        <input type="text" placeholder="State/ Region/ Province">
+        <br>
+        <input type="text" placeholder="Zip Code">
+        <br>
+        <input type="text" placeholder="Address 1">
+        <br>
+        <input type="text" placeholder="Address 2">
+        
+        <!-- right -->
+        <div class="shopping-contact">
+        <input type="text" placeholder="First Name">
+        <br>
+        <input type="text" placeholder="Last Name">
+        <br>
+        <input type="text" placeholder="E-mail">
+        <br>
+        <input type="text" placeholder="Phone">
+        
+        <table>
+            <tr>
+                <th>Shipping method</th>
+            </tr>
+            <tr>
+                <td><input type="radio">$ 10 Standard 
+                    <br> (2-3 weeks)
+                </td>
+                <td><input type="radio">$20 Standard <br>
+                    (1-3 days)
+                    
+                </td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    <div class="shopping-button">
+            <button class="continue-shopping-button">Shopping Cart</button>
+            <button class="info-shopping-button">Payment Method</button>
+            </div>  
+    </div>
+
 </body>
 </html>

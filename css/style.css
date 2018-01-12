@@ -110,3 +110,9 @@ td{
   display: flex;
   justify-content: space-between;
 }
+
+/* Part 2 Css */
+.shopping-title{
+    display: flex;
+    justify-content: space-around;
+}
