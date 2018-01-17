@@ -52,14 +52,15 @@
     <div class="shopping-adress">
       <!-- Left -->
       <form action="">
-        <select>
-          <option value="usa" id="selection_country">USA</option>
-          <option value="eua" id="selection_country">EUA</option>
+        <select id="selection_country">
+          <option value="0">Selecione um país</option>
+          <option value="1">USA</option>
+          <option value="2">EUA</option>
         </select>
         <br>
-        <select>
-          <option value="São Paulo" id="selection_city">São Paulo</option>
-          <option value="Lodon" id="selection_city">Lodon</option>
+        <select id="selection_city">
+          <option value="1">São Paulo</option>
+          <option value="2">Lodon</option>
         </select>
         <br>
         <input type="text" id="estate" placeholder="State/ Region/ Province">
@@ -101,7 +102,7 @@
     </div>
     <div class="shopping-button">
       <button class="continue-shopping-button">Shopping Cart</button>
-      <button class="info-shopping-button">Payment Method</button>
+      <button class="info-shopping-button" onclick="validaFormulario()">Payment Method</button>
     </div>
   </div>
 
